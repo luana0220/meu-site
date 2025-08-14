@@ -1,12 +1,132 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+#botaoSideBar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+#botaoSideBar:hover{
+    color:#FF6B9A; ;
 }
 
 header {
-    margin: 0px;
-    background-color: #6C63FF;
-    width: 100%;
-    height: 25%;
+    background: #300013;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    display: block;
+    transition: margin-left 0.3s;
+    margin-left: 250px;
 }
+
+header.sidebarEncolhida {
+    margin-left: 0px;
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #FF6B9A;;
+}
+
+.navbar li {
+    padding: 15px;
+}
+
+.navbar {
+    width: 250px;
+    background-color: #410922;
+    color: white;
+    height: 100vh;
+    transition: width 0.3s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+
+.navbar.encolhida {
+    width: 0px;
+}
+
+main {
+    padding: 20px;
+    transition: margin-left 0.3s;
+    margin-left: 250px;
+}
+
+main.sidebarEncolhida {
+    margin-left: 0px;
+}
+
+footer {
+    background-color: #300013;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    margin-left: 250px;
+    z-index: 500;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color:#FF6B9A; 
+}
+
+footer.sidebarEncolhida {
+    margin-left: 0px;
+}
+
+section {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    background-color:#EDE7F6;
+    margin: 10px;
+}
+
+#contato a {
+    text-decoration: none;
+    color: #222222;
+}
+
+
+
+

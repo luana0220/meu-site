@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Currículo</title>
 </head>
+
 <body>
-    <header>
-        <h1>Luana de Melo Duarte</h1>
-        <p>Estudante | Futura programadora</p>
-        <nav class="navbar">
-            <a href="#sobre">Sobre mim</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos"></a>
-            <a href="#contato">Sobre mim</a>
-        </nav>
-    </header>
+    <div class="container"></div>
+    <div class="navbar" id="sidebar">
+
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li> <a href="#projetos">Projetos</a></li>
+            <li> <a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <header id="header">
+            <h1>Luana de Melo Duarte</h1>
+            <p>Estudante | Futura programadora</p>
+            <button id="botaoSideBar">☰</button>
+        </header>
+
+        <main id="main">
+            <section id="sobre">
+                <h2>Sobre mim</h2>
+                <p>Meu nome é Luana de Melo Duarte, eu tenho 16 anos e sou estudante de informática na instituição
+                    CEFET-MG. Eu sou apaixonada por programação e estou sempre buscando aprender novas linguagens e
+                    novas práticas. Meu objetivo é me tornar uma programadora profissional e atuar em projetos que
+                    desfafiem minhas capacidades e que permitam desenvovê-las. Além de programar, também gosto muito de
+                    ler, escrever e me arrisco a desenhar.</p>
+            </section>
+            <section id="formacao">
+                <h2>Formação</h2>
+                <ol>
+                    <li><strong>Ensino Fundamental I e II completo:</strong></li>
+                    <p>Concluí o Ensino Fundamental na Escola Municipal Ivan Diniz Macedo, Contagem/MG, em 2023.</p>
+                    <li><strong>Ensino Médio em processo:</strong></li>
+                    <p>Cursando o Ensino Médio Técnico no Centro Federal de Educação Tecnológica, Contagem/MG, término
+                        previsto para 2026.</p>
+                    <li><strong>Curso Técnico de informática em processo</strong></li>
+                    <p>Cursando curso técnico em informática no CEFET-MG.</p>
+                </ol>
+            </section>
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Programação em C e C++</li>
+                    <li>Manipulação de tabela e dados em MySQL</li>
+                    <li>Desenvolvimento de sites e interface</li>
+                    <li>Organização de projetos</li>
+                </ul>
+            </section>
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <ul>
+                    <li><strong>Dots and Boxes:</strong> Jogo desenvolvido em C++ e interface gráfica desenvolvida com a
+                        biblioteca SFML.</li>
+                    <li><strong>Simulação de tráfego de aéreo:</strong> Programa desenvolvido em C++ com lógica de filas
+                        de prioridade.</li>
+                    <li><strong>Site de apresentação: </strong> Site desencolvido com HTML, CSS e JavaScript de
+                        apresentação pessoal.</li>
+                </ul>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <p><strong>Email: </strong><a href="mailto:luanameloduarte2009@gmail.com">Meu Email</a></p>
+                <p><strong>linkedin: </strong> <a href="https://www.linkedin.com/in/luana-de-melo-duarte-662207298"> Meu
+                        perfil</a></p>
+                <p><strong>GitHub: </strong> <a href="https://github.com/luana0220">Meu perfil no GitHub</a></p>
+            </section>
+        </main>
+    </div>
+    </div>
+    <footer id="foot">
+        <p>© 2025 Luana de Melo Duarte</p>
+        <p>
+            <a href="mailto:luanameloduarte2009@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/luanamacedo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/luana-diniz" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
